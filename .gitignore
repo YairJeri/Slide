@@ -1,0 +1,28 @@
+# Build directory
+build/
+bin/
+
+# ANTLR generated C++ files (if generated in root)
+SlideLexer.cpp
+SlideLexer.h
+SlideParser.cpp
+SlideParser.h
+SlideBaseVisitor.cpp
+SlideBaseVisitor.h
+SlideVisitor.cpp
+SlideVisitor.h
+SlideBaseListener.cpp
+SlideBaseListener.h
+SlideListener.cpp
+SlideListener.h
+*.tokens
+*.interp
+
+# Compiled binaries and objects
+*.o
+*.out
+slide
+
+# Generated output presentations
+Website/
+

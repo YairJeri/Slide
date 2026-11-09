@@ -59,3 +59,33 @@ slide {
 
 - **Fondos**:  
   Se pueden especificar colores sólidos o imágenes.
+
+## Compilación y Ejecución
+
+### Prerrequisitos
+- C++17 (`g++` o `clang++`)
+- `cmake` (>= 3.16)
+- Generador de parser `antlr4` (o `antlr4-complete.jar`)
+- Librería C++ `antlr4-runtime`
+
+En distribuciones basadas en Arch Linux:
+```bash
+sudo pacman -S antlr4 antlr4-runtime cmake
+```
+En Ubuntu / Debian:
+```bash
+sudo apt install antlr4 libantlr4-runtime-dev cmake
+```
+
+### Compilar
+```bash
+cmake -B build
+cmake --build build
+```
+
+### Ejecutar
+```bash
+./build/slide ejemplo.slide
+```
+El transpiler generará los archivos `index.html`, `style.css` y `script.js` dentro del directorio `Website/`. Abre `Website/index.html` en tu navegador para ver la presentación.
+
